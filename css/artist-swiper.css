@@ -1,0 +1,507 @@
+/* Import Local SCSS file*/
+/* Fontawesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+/* Web fonts*/
+/* NCLNeovibes-Demo */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "NCLNeovibes-Demo";
+  src: url("../ncl_neovibes/NCLNeovibes-Demo.otf");
+}
+/* Noto+Sans+KR, Poppins */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+}
+
+.inner {
+  width: 1440px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+li {
+  padding: 0;
+  list-style: none;
+}
+
+/* Font Family */
+/* Font Size */
+/* Gray Color*/
+/* Object Color*/
+/* box-shadow */
+/* line */
+/* padding & margin */
+/* ############ Common CSS ############*/
+* {
+  font-family: "NCLNeovibes-Demo";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ########## header ########## */
+header {
+  background-color: #0B090A;
+  color: #0B090A;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 80px;
+  z-index: 200;
+}
+header .header-inner {
+  margin: auto;
+  width: 90%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-inner nav ul {
+  min-width: 830px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .header-inner nav ul li a {
+  color: #FFF;
+  font-family: "NCLNeovibes-Demo";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 0.85rem;
+}
+header .header-inner nav ul li a:hover {
+  color: #F34300;
+}
+header .header-inner .icon.iconColor {
+  color: #0B090A;
+}
+header .header-inner .icon button {
+  display: none;
+  background: no-repeat;
+}
+header .header-inner .icon #side-menu {
+  display: none;
+}
+
+/* ############ artist-swiper ############*/
+.artist.inner {
+  margin-bottom: 150px;
+}
+.artist.inner .artist-title .content-title {
+  margin: 70px 0;
+}
+.artist.inner .artist-swiper .swiper-wrapper {
+  height: 700px;
+}
+.artist.inner .artist-swiper .swiper-wrapper .swiper-slide {
+  width: 500px;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.artist.inner .artist-swiper .swiper-wrapper .swiper-slide:hover p.artist-name {
+  display: block;
+}
+.artist.inner .artist-swiper .swiper-wrapper .swiper-slide:hover .imgwrap {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+.artist.inner .artist-swiper .swiper-wrapper .swiper-slide:hover .imgwrap::after {
+  display: block;
+}
+.artist.inner .artist-swiper .swiper-wrapper .swiper-slide .imgwrap {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.artist.inner .artist-swiper .swiper-wrapper .swiper-slide .imgwrap::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #F34300;
+  opacity: 0.7;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.artist.inner .artist-swiper .swiper-wrapper .swiper-slide .imgwrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.artist.inner .artist-swiper .swiper-wrapper p.artist-name {
+  position: absolute;
+  color: #FFF;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+.artist.inner .artist-swiper .swiper-scrollbar .swiper-scrollbar-drag {
+  background-color: #F34300;
+}
+
+/* ########## footer ########## */
+.footer-content {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  background: #0B090A;
+  overflow: hidden;
+}
+.footer-content .content-items {
+  height: 500px;
+  padding: 70px 0;
+}
+.footer-content .content-items .content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.footer-content .content-items .content-item .item-left,
+.footer-content .content-items .content-item .item-right {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer-content .content-items .content-item .item-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer-content .content-items .content-item .item-left .logo {
+  width: 175px;
+}
+.footer-content .content-items .content-item .item-left .logo img {
+  width: 100%;
+}
+.footer-content .content-items .content-item .item-left .decs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+.footer-content .content-items .content-item .item-left .decs span,
+.footer-content .content-items .content-item .item-left .decs strong,
+.footer-content .content-items .content-item .item-left .decs a {
+  color: #FFF;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+.footer-content .content-items .content-item .item-left .decs span:nth-child(1) {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.footer-content .content-items .content-item .item-left .decs span:nth-child(2) {
+  text-decoration: underline;
+  font-family: "Poppins", sans-serif;
+}
+.footer-content .content-items .content-item .item-left .decs span:nth-child(3) {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.footer-content .content-items .content-item .item-right {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.footer-content .content-items .content-item .item-right .top-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 2px solid #FFF;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 55px;
+  text-align: center;
+}
+.footer-content .content-items .content-item .item-right .top-btn a i {
+  color: #FFF;
+  font-size: 1.2rem;
+}
+.footer-content .content-items .content-item .item-right .footer-sns {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+}
+.footer-content .content-items .content-item .item-right .footer-sns a i {
+  color: #FFF;
+  font-size: 40px;
+}
+.footer-content .footer-bar {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: #F34300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-content .footer-bar .footer-bar-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+}
+.footer-content .footer-bar .footer-bar-linetext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: fani 30s linear infinite;
+          animation: fani 30s linear infinite;
+  gap: 20px;
+}
+.footer-content .footer-bar .footer-bar-linetext p {
+  font-size: 0.6rem;
+  color: #0B090A;
+  margin: 0 2rem;
+}
+@-webkit-keyframes fani {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@keyframes fani {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  /* ########## header ########## */
+  header {
+    height: 80px;
+  }
+  header .header-inner {
+    margin: auto;
+  }
+  header .header-inner .logo img {
+    width: 88px;
+    height: 30px;
+  }
+  header .header-inner nav {
+    display: none;
+  }
+  header .header-inner .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0px;
+  }
+  header .header-inner .icon button#menu {
+    border: none;
+    display: block;
+    background: no-repeat;
+  }
+  header .header-inner .icon button#menu i {
+    font-size: 2.2rem;
+  }
+  header .header-inner .icon a img {
+    width: 24px;
+    height: auto;
+    display: none;
+  }
+  header .header-inner .icon #side-menu {
+    background: #0B090A;
+    display: block !important;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    color: #FFF;
+    -webkit-transition: right 0.3s ease;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 0 20px;
+  }
+  header .header-inner .icon #side-menu.open {
+    right: 0;
+  }
+  header .header-inner .icon #side-menu #close {
+    padding: 0 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+  }
+  header .header-inner .icon #side-menu #close i {
+    font-size: 2.2rem;
+    z-index: 1000 !important;
+  }
+  header .header-inner .icon #side-menu .side-menu-top {
+    border: none;
+    margin: 10px;
+    width: 100%;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-inner .icon #side-menu .side-menu-top .logo a.logo-img {
+    display: block;
+    z-index: 1000;
+  }
+  header .header-inner .icon #side-menu .side-menu-top .logo a.logo-img img {
+    width: 88px;
+    height: 30px;
+  }
+  header .header-inner .icon #side-menu ul {
+    padding-top: 100px;
+    text-align: end;
+    margin-right: 10px;
+  }
+  header .header-inner .icon #side-menu ul li {
+    padding: 10px 0px;
+  }
+  header .header-inner .icon #side-menu ul li a {
+    padding: 10px 0;
+    font-size: 2rem;
+    font-family: "NCLNeovibes-Demo";
+  }
+  header .header-inner .icon #side-menu ul li a:hover {
+    color: #F34300;
+  }
+  /* ########## ARTIST INFO ########## */
+  /* ########## FOOTER ########## */
+  .footer-content {
+    height: 80%;
+  }
+  .footer-content .content-items .content-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer-content .content-items .content-item .item-left {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .footer-content .content-items .content-item .item-left .logo {
+    width: 88px;
+  }
+  .footer-content .content-items .content-item .item-left .decs span,
+  .footer-content .content-items .content-item .item-left .decs strong {
+    color: #FFF;
+  }
+  .footer-content .content-items .content-item .item-right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .footer-content .content-items .content-item .item-right .top-btn {
+    display: none;
+  }
+  .footer-content .content-items .content-item .item-right .footer-sns {
+    left: 0;
+    gap: 25px;
+  }
+  .footer-content .content-items .content-item .item-right .footer-sns a i {
+    color: #FFF;
+    font-size: 1.5rem;
+  }
+  .footer-content .footer-bar {
+    height: 30px;
+  }
+}

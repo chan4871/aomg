@@ -1,0 +1,439 @@
+/* Import Local SCSS Files */
+@import 'variables', 'reset', 'fonts';
+
+
+header {
+  background-color: $main-black;
+  color: $main-black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 80px;
+  z-index: 200;
+
+  .header-inner {
+    margin: auto;
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {}
+
+    nav {
+
+      ul {
+        min-width: 830px;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          a {
+            color: $white;
+            font-family: $primary-en;
+            transition: .3s;
+            font-size: $txt;
+
+            &:hover {
+              color: $main-color;
+            }
+          }
+        }
+      }
+    }
+
+    .icon {
+      &.iconColor {
+        color: $main-black;
+      }
+
+      button {
+        display: none;
+        background: no-repeat;
+      }
+
+      #side-menu {
+        display: none;
+      }
+    }
+  }
+}
+html{scroll-behavior: smooth;}
+section.news {
+  padding: 250px 0;
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+
+    .news-title {
+      div.news-tab01 {
+        margin-top: -20px;
+
+        span {
+          font-family: $primary-en;
+          font-size: $title;
+        }
+      }
+
+      div.news-tab02 {
+        margin-top: -20px;
+
+        span.en {
+          font-family: $primary-en;
+          color: $light-black;
+          font-size: $title-small;
+        }
+
+        span.kr {
+          font-family: $primary-kr;
+          font-weight: 900;
+          font-size: $title-small;
+          color: $light-black;
+          line-height: 2.4rem;
+        }
+
+      }
+    }
+
+    .news-content {
+
+      table#news-table {
+        width: 1110px;
+        height: 780px;
+        border-top: $line-bold;
+        border-collapse: collapse;
+        table-layout: fixed;
+
+        thead {
+          tr {
+            th {
+              padding: 20px 40px;
+              font-size: $body-title;
+              color: $main-black;
+              font-family: $primary-kr;
+
+              &.category {
+                width: 20%;
+              }
+
+              &.title {}
+
+              &.date {
+                width: 20%;
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              font-family: $primary-kr;
+              border-top: $line-dotted;
+              padding: 20px 40px;
+              font-size: $txt;
+              text-align: center;
+              color: $dim-black;
+              cursor: pointer;
+              &:hover:nth-child(2){
+                color: $main-black;
+                text-decoration: underline;
+              }
+              &.news-title {
+                text-align: start;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+
+            &.active {
+              color: $main-black;
+              font-weight: bold;
+            }
+
+            &.hidden {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .pagination {
+        padding-top: 80px;
+        margin: auto;
+        text-align: center;
+
+        button {
+          background: none;
+          border: none;
+          padding: 5px 15px;
+          font-size: $body;
+          font-family: $secondary-en;
+          color: $main-black;
+        }
+
+        .page-btn {
+          background: none;
+          border: none;
+          padding: 5px 15px;
+          font-size: $body;
+          font-family: $secondary-en;
+          color: $main-black;
+
+          &.active {
+            color: $main-color;
+            font-weight: bold;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+/* responsive Mobile */
+@media (max-width:767px) {
+  * {
+    font-size: 12px;
+  }
+
+  /* ############ Common CSS ############*/
+  .inner {
+    width: 90%;
+  }
+
+  header {
+    height: 80px;
+
+    .header-inner {
+      margin: auto;
+
+      .logo {
+        img {
+          width: 88px;
+          height: 30px;
+        }
+      }
+
+      nav {
+        display: none;
+      }
+
+      .icon {
+        display: flex;
+        gap: 0px;
+
+        button#menu {
+          border: none;
+          display: block;
+          background: no-repeat;
+
+          i {
+            font-size: 2.2rem;
+          }
+        }
+
+        a {
+          img {
+            width: 24px;
+            height: auto;
+            display: none;
+          }
+        }
+
+        #side-menu {
+          background: $main-black;
+          display: block !important;
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 100%;
+          height: 100vh;
+          color: $white;
+          transition: right 0.3s ease;
+          z-index: 1000;
+          padding: 0 20px;
+
+          &.open {
+            right: 0;
+          }
+
+          #close {
+
+            padding: 0 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 800;
+
+            i {
+              font-size: 2.2rem;
+              z-index: 1000 !important;
+            }
+          }
+
+          .side-menu-top {
+            border: none;
+            margin: 10px;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo {
+              a.logo-img {
+                display: block;
+                z-index: 1000;
+
+                img {
+                  width: 88px;
+                  height: 30px;
+                }
+
+              }
+            }
+          }
+
+          ul {
+            padding-top: 100px;
+            text-align: end;
+            margin-right: 10px;
+
+            li {
+              padding: 10px 0px;
+
+              a {
+                padding: 10px 0;
+                font-size: $title-small;
+                font-family: $primary-en;
+
+                &:hover {
+                  color: $main-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.news {
+    padding-top: 200px;
+    padding-bottom: 120px;
+
+    .inner {
+      width: 90%;
+      flex-direction: column;
+
+      .news-title {
+        div.news-tab01 {}
+
+        div.news-tab02 {
+          span.kr {
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .news-content {
+        margin-top: 40px;
+
+        table#news-table {
+          width: 100%;
+          height: max-content;
+          border-top: $line-bold;
+          border-collapse: collapse;
+          table-layout: fixed;
+
+          thead {
+            tr {
+              th {
+                padding: 20px 10px;
+
+                &.date {
+                  display: none;
+                }
+
+                &.category {
+                  width: 20%;
+                }
+
+                &.title {}
+
+              }
+            }
+          }
+
+          tbody {
+            tr {
+              td {
+                padding: 20px 20px;
+                font-size: $txt;
+                text-align: center;
+                color: $dim-black;
+
+                &.date {
+                  display: none;
+                }
+
+                &.news-title {
+                  text-align: start;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+              }
+
+              &.active {
+                color: $main-black;
+                font-weight: bold;
+              }
+
+              &.hidden {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .pagination {
+          padding-top: 80px;
+          margin: auto;
+          text-align: center;
+
+          button {
+            background: none;
+            border: none;
+            padding: 5px 15px;
+            font-size: $body;
+            font-family: $secondary-en;
+            color: $main-black;
+          }
+
+          .page-btn {
+            background: none;
+            border: none;
+            padding: 5px 15px;
+            font-size: $body;
+            font-family: $secondary-en;
+            color: $main-black;
+
+            &.active {
+              color: $main-color;
+              font-weight: bold;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

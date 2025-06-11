@@ -1,0 +1,980 @@
+/* Import Local SCSS Files */
+@import 'variables', 'reset', 'fonts';
+
+html{scroll-behavior: smooth;}
+header {
+  &.on {
+    background-color: $main-black;
+    color: $main-black;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 80px;
+  z-index: 200;
+
+  .header-inner {
+    margin: auto;
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {}
+
+    nav {
+
+      ul {
+        min-width: 830px;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          a {
+            color: $white;
+            font-family: $primary-en;
+            transition: .3s;
+            font-size: $txt;
+
+            &:hover {
+              color: $main-color;
+            }
+          }
+        }
+      }
+    }
+
+    .icon {
+      &.iconColor {
+        color: $main-black;
+      }
+
+      button {
+        display: none;
+        background: no-repeat;
+      }
+
+      #side-menu {
+        display: none;
+      }
+    }
+  }
+}
+
+section.visu {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background-color: $main-black;
+  margin: auto;
+
+  span.top {
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    font-family: $primary-en;
+    color: $dim-black;
+  }
+
+  .wrapwrap {
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+
+    .img-wrap.wrap01 {
+      z-index: 1;
+      position: relative;
+      margin-top: 50px;
+      height: 250px;
+      width: 13500px;
+      display: flex;
+
+      div {
+        display: flex;
+        width: 16.66%;
+        animation: eventThumbVisu01 33.3s linear infinite;
+
+        @keyframes eventThumbVisu01 {
+          0% {
+            transform: translateX(-300%);
+          }
+
+          100% {
+            transform: translateX(-200%);
+          }
+        }
+
+        div {
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 250px;
+          height: 250px;
+
+          img {
+            width: 250px;
+            height: 250px;
+          }
+        }
+      }
+    }
+
+    .img-wrap.wrap02 {
+      z-index: 1;
+      position: relative;
+      margin-top: 20px;
+      height: 250px;
+      width: 13500px;
+      display: flex;
+
+      div {
+
+        width: 16.66%;
+        display: flex;
+        animation: eventThumbVisu02 33.3s linear infinite;
+
+        @keyframes eventThumbVisu02 {
+          0% {
+            transform: translateX(-300%);
+          }
+
+          100% {
+            transform: translateX(-400%);
+          }
+        }
+
+        div {
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 250px;
+          height: 250px;
+
+          img {
+            width: 250px;
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+
+  span.bottom {
+
+    position: absolute;
+    bottom: 75px;
+    right: 80px;
+    font-size: 100px;
+    font-family: $primary-en;
+    color: $main-color;
+  }
+}
+
+section.schedule {
+  height: max-content;
+  padding: 250px 0;
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+
+    .schedule-box {
+      height: 980px;
+      width: 650px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .schedule-title {
+        h1.content-title {
+          font-size: $title;
+          font-family: $primary-en;
+        }
+      }
+
+      .schedule-content {
+        width: 650px;
+        height: 745px;
+        border-top: $line-middle;
+
+
+        ul.schedule-page {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          display: none;
+          flex-direction: column;
+          justify-content: space-between;
+
+          &.active {
+            display: block;
+          }
+
+          li {
+            width: 100%;
+            height: 20%;
+            border-bottom: $line-light;
+            padding: 40px 20px;
+            font-family: $secondary-en;
+            font-family: $primary-kr;
+
+            a {
+              span {
+                color: $light-black;
+                font-size: $txt;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+              }
+
+              p {
+                margin-top: 14px;
+                color: $dim-black;
+                font-size: $body-title;
+                font-weight: 600;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+
+      .content-paging {
+        display: flex;
+        justify-content: end;
+
+        button {
+          border: none;
+          background: none;
+          padding: 0 15px;
+          color: $light-black;
+
+          i {
+            font-size: 1.2rem;
+          }
+        }
+
+        .content-paging-view {
+          font-size: $body;
+          display: flex;
+
+          .current {
+            color: $main-black;
+            font-size: $body;
+            font-weight: bold;
+            padding: 0 5px;
+          }
+
+          .slash {
+            font-size: $body-title;
+            padding: 0 5px;
+          }
+
+          .total {
+            color: $light-black;
+            padding: 0 5px;
+            font-size: $body;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .schedule-table-box {
+      height: 980px;
+      width: 650px;
+
+      .table-title {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+
+        label {
+          select#year-select {
+            font-size: $body-megaTitle;
+            border: none;
+            outline: none;
+            font-weight: bold;
+            font-family: $secondary-en;
+            color: $light-black;
+
+            option {}
+          }
+        }
+
+        label {
+
+          select#month-select {
+            font-size: $subTitle;
+            border: none;
+            outline: none;
+            font-weight: bold;
+            font-family: $secondary-en;
+
+
+            option {}
+          }
+        }
+      }
+
+      table.schedule-table {
+        width: 100%;
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+
+        thead {
+          width: 100%;
+          height: 70px;
+
+          tr#day {
+
+            th {
+              font-size: $body;
+              font-family: $secondary-en;
+              font-weight: bold;
+
+              &:nth-child(1) {
+                color: $light-black;
+              }
+
+              &:nth-last-child(1) {
+                color: $light-black;
+              }
+            }
+          }
+        }
+
+        tbody {
+          width: 100%;
+
+          tr {
+
+            td {
+              border-bottom: $line-light;
+              width: calc(100% / 7);
+              height: 150px;
+              text-align: center;
+              vertical-align: top;
+              padding: 16px;
+              font-size: $body;
+              font-family: $secondary-en;
+              font-weight: bold;
+              position: relative;
+
+              &.weekend {
+                color: $light-black;
+              }
+
+              .event-mark {
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50px;
+                height: 4px;
+                margin: auto;
+
+                &.broadcast {
+                  background-color: $blue;
+                }
+
+                &.radio {
+                  background-color: $green;
+                }
+
+                &.perfor {
+                  background-color: $purple;
+                }
+
+                &.event {
+                  background-color: $pink;
+                }
+              }
+
+              .weather-icon {
+                width: 55px;
+                height: 55px;
+                margin: auto;
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -40%);
+              }
+
+            }
+
+            &:nth-child(1) td {
+              border-top: $line-middle;
+            }
+
+            &:nth-last-child(1) td {
+              border: none;
+            }
+          }
+        }
+      }
+
+      .event-color-box {
+        display: flex;
+        justify-content: end;
+
+
+        .box {
+          width: 100px;
+          height: 20px;
+          display: flex;
+
+          div.color {
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            margin-right: 5px;
+
+          }
+
+          &:nth-child(1) div {
+            background-color: $pink;
+          }
+
+          &:nth-child(2) div {
+            background-color: $green;
+          }
+
+          &:nth-child(3) div {
+            background-color: $blue;
+          }
+
+          &:nth-child(4) div {
+            background-color: $purple;
+          }
+
+          p {
+            font-size: $txt;
+            font-family: $primary-kr;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width:767px) {
+  * {
+    font-size: 12px;
+  }
+
+  header {
+    height: 80px;
+
+    .header-inner {
+      margin: auto;
+
+      .logo {
+        img {
+          width: 88px;
+          height: 30px;
+        }
+      }
+
+      nav {
+        display: none;
+      }
+
+      .icon {
+        display: flex;
+        gap: 0px;
+
+        button#menu {
+          border: none;
+          display: block;
+          background: no-repeat;
+
+          i {
+            font-size: 2.2rem;
+          }
+        }
+
+        a {
+          img {
+            width: 24px;
+            height: auto;
+            display: none;
+          }
+        }
+
+        #side-menu {
+          background: $main-black;
+          display: block !important;
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 100%;
+          height: 100vh;
+          color: $white;
+          transition: right 0.3s ease;
+          z-index: 1000;
+          padding: 0 20px;
+
+          &.open {
+            right: 0;
+          }
+
+          #close {
+
+            padding: 0 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 800;
+
+            i {
+              font-size: 2.2rem;
+              z-index: 1000 !important;
+            }
+          }
+
+          .side-menu-top {
+            border: none;
+            margin: 10px;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo {
+              a.logo-img {
+                display: block;
+                z-index: 1000;
+
+                img {
+                  width: 88px;
+                  height: 30px;
+                }
+
+              }
+            }
+          }
+
+          ul {
+            padding-top: 100px;
+            text-align: end;
+            margin-right: 10px;
+
+            li {
+              padding: 10px 0px;
+
+              a {
+                padding: 10px 0;
+                font-size: $title-small;
+                font-family: $primary-en;
+
+                &:hover {
+                  color: $main-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.visu {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: $main-black;
+    margin: auto;
+
+    span.top {
+      position: relative;
+      top: 100px;
+      font-size: 2.4rem !important;
+
+    }
+
+    .wrapwrap {
+      margin-top: 35px;
+      width: 100%;
+      height: 300px;
+
+      .img-wrap.wrap01 {
+        z-index: 1;
+        position: relative;
+        margin-top: 50px;
+        height: 100px;
+        width: 5400px;
+        display: flex;
+
+        div {
+          display: flex;
+          width: 16.66%;
+          animation: eventThumbVisu01 33.3s linear infinite;
+
+
+
+          div {
+            width: 100px;
+            height: 100px;
+
+            img {
+              width: 100px;
+              height: 100px;
+            }
+          }
+        }
+      }
+
+      .img-wrap.wrap02 {
+        z-index: 1;
+        position: relative;
+        margin-top: 20px;
+        height: 100px;
+        width: 5400px;
+        display: flex;
+
+        div {
+
+          width: 16.66%;
+          display: flex;
+          animation: eventThumbVisu02 33.3s linear infinite;
+
+          div {
+            width: 100px;
+            height: 100px;
+
+            img {
+              width: 100px;
+              height: 100px;
+            }
+          }
+        }
+      }
+    }
+
+    span.bottom {
+
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      font-size: 2.4rem !important;
+
+    }
+  }
+
+  section.schedule {
+    width: 100%;
+    height: 1200px;
+    padding: 40px 20px;
+
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 90%;
+
+      .schedule-box {
+        height: 500px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .schedule-title {
+          h1.content-title {
+            font-size: $title;
+            font-family: $primary-en;
+          }
+        }
+
+        .schedule-content {
+          width: 100%;
+          height: 320px;
+          border-top: $line-middle;
+
+          ul.schedule-page {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &.active {
+              display: block;
+            }
+
+            li {
+              width: 100%;
+              height: 20%;
+              border-bottom: $line-light;
+              padding: 15px 10px;
+              font-family: $secondary-en;
+              font-family: $primary-kr;
+
+              a {
+                span {
+                  color: $light-black;
+                  font-size: $txt;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  white-space: nowrap;
+                }
+
+                p {
+                  margin-top: 2px;
+                  color: $dim-black;
+                  font-size: $body-title;
+                  font-weight: 600;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+
+        .content-paging {
+          display: flex;
+          justify-content: end;
+
+          button {
+            border: none;
+            background: none;
+            padding: 0 15px;
+            color: $light-black;
+
+            i {
+              font-size: 1.2rem;
+            }
+          }
+
+          .content-paging-view {
+            font-size: $body;
+            display: flex;
+
+            .current {
+              color: $main-black;
+              font-size: $body;
+              font-weight: bold;
+              padding: 0 5px;
+            }
+
+            .slash {
+              font-size: $body-title;
+              padding: 0 5px;
+            }
+
+            .total {
+              color: $light-black;
+              padding: 0 5px;
+              font-size: $body;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .schedule-table-box {
+        height: 500px;
+        width: 100%;
+        margin-top: 60px;
+
+        .table-title {
+          width: 100%;
+          height: 40px;
+
+
+          label {
+
+
+
+            select#year-select {
+              font-size: $body-megaTitle;
+              border: none;
+              outline: none;
+              font-weight: bold;
+              font-family: $secondary-en;
+              color: $light-black;
+
+              option {}
+            }
+          }
+
+          label {
+
+            select#month-select {
+              font-size: $subTitle;
+              border: none;
+              outline: none;
+              font-weight: bold;
+              font-family: $secondary-en;
+
+              option {}
+            }
+          }
+        }
+
+        table.schedule-table {
+          width: 100%;
+          height: 100%;
+          border-collapse: collapse;
+
+
+          thead {
+            width: 100%;
+            height: 70px;
+
+            tr#day {
+
+              th {
+                font-size: $body;
+                font-family: $secondary-en;
+                font-weight: bold;
+
+                &:nth-child(1) {
+                  color: $light-black;
+                }
+
+                &:nth-last-child(1) {
+                  color: $light-black;
+                }
+              }
+            }
+          }
+
+          tbody {
+            width: 100%;
+
+
+
+            tr {
+              td {
+
+                border-bottom: $line-light;
+                width: calc(100% / 7);
+                height: 80px;
+                text-align: center;
+                vertical-align: top;
+                padding: 16px;
+                font-size: $body;
+                font-family: $secondary-en;
+                font-weight: bold;
+                position: relative;
+
+                .event-mark {
+
+                  position: absolute;
+                  bottom: 14px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  width: 27px;
+                  height: 4px;
+                  margin: auto;
+
+                  &.broadcast {
+                    background-color: $blue;
+                  }
+
+                  &.radio {
+                    background-color: $green;
+                  }
+
+                  &.perfor {
+                    background-color: $purple;
+                  }
+
+                  &.event {
+                    background-color: $pink;
+                  }
+                }
+
+                .weather-icon {
+
+                  width: 15px;
+                  height: 15px;
+                  margin-top: 10px;
+                  text-align: center;
+                  margin: auto;
+                  display: inline-block;
+                  position: absolute;
+                  top: 60%;
+                  left: 50%;
+                  transform: translate(-50%, -40%);
+                }
+              }
+
+              &:nth-child(1) td {
+                border-top: $line-middle;
+              }
+
+              &:nth-last-child(1) td {
+                border: none;
+              }
+            }
+          }
+        }
+
+        .event-color-box {
+          display: flex;
+          justify-content: end;
+          width: 50%;
+          margin-left: auto;
+          .box {
+            width: 100%;
+            height: 20px;
+            display: flex;
+            justify-content: end;
+            div.color {
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              margin-right: 5px;
+              margin-top: 2px;
+
+            }
+
+            &:nth-child(1) div {
+              background-color: $pink;
+            }
+
+            &:nth-child(2) div {
+              background-color: $green;
+            }
+
+            &:nth-child(3) div {
+              background-color: $blue;
+            }
+
+            &:nth-child(4) div {
+              background-color: $purple;
+            }
+
+            p {
+              width: 30px;
+              font-size: $txt;
+              font-family: $primary-kr;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}

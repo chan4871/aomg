@@ -1,0 +1,959 @@
+/* Import Local SCSS Files */
+/* Font Family */
+/* Font Size */
+/* Gray Color*/
+/* Object Color*/
+/* box-shadow */
+/* line */
+/* padding & margin */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+}
+
+.inner {
+  width: 1440px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+li {
+  padding: 0;
+  list-style: none;
+}
+
+/* Fontawesome */
+/* Web fonts*/
+/* NCLNeovibes-Demo */
+@font-face {
+  font-family: "NCLNeovibes-Demo";
+  src: url("../ncl_neovibes/NCLNeovibes-Demo.otf");
+}
+/* Noto+Sans+KR, Poppins */
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 80px;
+  z-index: 200;
+}
+header.on {
+  background-color: #0B090A;
+  color: #0B090A;
+}
+header .header-inner {
+  margin: auto;
+  width: 90%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-inner nav ul {
+  min-width: 830px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .header-inner nav ul li a {
+  color: #FFF;
+  font-family: "NCLNeovibes-Demo";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 0.85rem;
+}
+header .header-inner nav ul li a:hover {
+  color: #F34300;
+}
+header .header-inner .icon.iconColor {
+  color: #0B090A;
+}
+header .header-inner .icon button {
+  display: none;
+  background: no-repeat;
+}
+header .header-inner .icon #side-menu {
+  display: none;
+}
+
+section.visu {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background-color: #0B090A;
+  margin: auto;
+}
+section.visu span.top {
+  position: relative;
+  top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 100px;
+  font-family: "NCLNeovibes-Demo";
+  color: #505050;
+}
+section.visu .wrapwrap {
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+}
+section.visu .wrapwrap .img-wrap.wrap01 {
+  z-index: 1;
+  position: relative;
+  margin-top: 50px;
+  height: 250px;
+  width: 13500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section.visu .wrapwrap .img-wrap.wrap01 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 16.66%;
+  -webkit-animation: eventThumbVisu01 33.3s linear infinite;
+          animation: eventThumbVisu01 33.3s linear infinite;
+}
+@-webkit-keyframes eventThumbVisu01 {
+  0% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+  100% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
+@keyframes eventThumbVisu01 {
+  0% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+  100% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
+section.visu .wrapwrap .img-wrap.wrap01 div div {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 250px;
+}
+section.visu .wrapwrap .img-wrap.wrap01 div div img {
+  width: 250px;
+  height: 250px;
+}
+section.visu .wrapwrap .img-wrap.wrap02 {
+  z-index: 1;
+  position: relative;
+  margin-top: 20px;
+  height: 250px;
+  width: 13500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section.visu .wrapwrap .img-wrap.wrap02 div {
+  width: 16.66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: eventThumbVisu02 33.3s linear infinite;
+          animation: eventThumbVisu02 33.3s linear infinite;
+}
+@-webkit-keyframes eventThumbVisu02 {
+  0% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+  100% {
+    -webkit-transform: translateX(-400%);
+            transform: translateX(-400%);
+  }
+}
+@keyframes eventThumbVisu02 {
+  0% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+  100% {
+    -webkit-transform: translateX(-400%);
+            transform: translateX(-400%);
+  }
+}
+section.visu .wrapwrap .img-wrap.wrap02 div div {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 250px;
+}
+section.visu .wrapwrap .img-wrap.wrap02 div div img {
+  width: 250px;
+  height: 250px;
+}
+section.visu span.bottom {
+  position: absolute;
+  bottom: 75px;
+  right: 80px;
+  font-size: 100px;
+  font-family: "NCLNeovibes-Demo";
+  color: #F34300;
+}
+
+section.schedule {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 250px 0;
+}
+section.schedule .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.schedule .inner .schedule-box {
+  height: 980px;
+  width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.schedule .inner .schedule-box .schedule-title h1.content-title {
+  font-size: 2.4rem;
+  font-family: "NCLNeovibes-Demo";
+}
+section.schedule .inner .schedule-box .schedule-content {
+  width: 650px;
+  height: 745px;
+  border-top: 2px solid #0B090A;
+}
+section.schedule .inner .schedule-box .schedule-content ul.schedule-page {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.schedule .inner .schedule-box .schedule-content ul.schedule-page.active {
+  display: block;
+}
+section.schedule .inner .schedule-box .schedule-content ul.schedule-page li {
+  width: 100%;
+  height: 20%;
+  border-bottom: 1px solid #999;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Noto+Sans+KR", sans-serif;
+}
+section.schedule .inner .schedule-box .schedule-content ul.schedule-page li a span {
+  color: #999;
+  font-size: 0.85rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+section.schedule .inner .schedule-box .schedule-content ul.schedule-page li a p {
+  margin-top: 14px;
+  color: #505050;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+section.schedule .inner .schedule-box .content-paging {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+section.schedule .inner .schedule-box .content-paging button {
+  border: none;
+  background: none;
+  padding: 0 15px;
+  color: #999;
+}
+section.schedule .inner .schedule-box .content-paging button i {
+  font-size: 1.2rem;
+}
+section.schedule .inner .schedule-box .content-paging .content-paging-view {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section.schedule .inner .schedule-box .content-paging .content-paging-view .current {
+  color: #0B090A;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0 5px;
+}
+section.schedule .inner .schedule-box .content-paging .content-paging-view .slash {
+  font-size: 1.2rem;
+  padding: 0 5px;
+}
+section.schedule .inner .schedule-box .content-paging .content-paging-view .total {
+  color: #999;
+  padding: 0 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+section.schedule .inner .schedule-table-box {
+  height: 980px;
+  width: 650px;
+}
+section.schedule .inner .schedule-table-box .table-title {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.schedule .inner .schedule-table-box .table-title label select#year-select {
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #999;
+}
+section.schedule .inner .schedule-table-box .table-title label select#month-select {
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+section.schedule .inner .schedule-table-box table.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+section.schedule .inner .schedule-table-box table.schedule-table thead {
+  width: 100%;
+  height: 70px;
+}
+section.schedule .inner .schedule-table-box table.schedule-table thead tr#day th {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+section.schedule .inner .schedule-table-box table.schedule-table thead tr#day th:nth-child(1) {
+  color: #999;
+}
+section.schedule .inner .schedule-table-box table.schedule-table thead tr#day th:nth-last-child(1) {
+  color: #999;
+}
+section.schedule .inner .schedule-table-box table.schedule-table tbody {
+  width: 100%;
+}
+section.schedule .inner .schedule-table-box table.schedule-table tbody tr td {
+  border-bottom: 1px solid #999;
+  width: 14.2857142857%;
+  height: 150px;
+  text-align: center;
+  vertical-align: top;
+  padding: 16px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  position: relative;
+}
+section.schedule .inner .schedule-table-box table.schedule-table tbody tr td.weekend {
+  color: #999;
+}
+section.schedule .inner .schedule-table-box table.schedule-table tbody tr td .event-mark {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50px;
+  height: 4px;
+  margin: auto;
+}
+section.schedule .inner .schedule-table-box table.schedule-table tbody tr td .event-mark.broadcast {
+  background-color: #A9DEF9;
+}
+section.schedule .inner .schedule-table-box table.schedule-table tbody tr td .event-mark.radio {
+  background-color: #C3F8D8;
+}
+section.schedule .inner .schedule-table-box table.schedule-table tbody tr td .event-mark.perfor {
+  background-color: #E4C1F9;
+}
+section.schedule .inner .schedule-table-box table.schedule-table tbody tr td .event-mark.event {
+  background-color: #FF99C8;
+}
+section.schedule .inner .schedule-table-box table.schedule-table tbody tr td .weather-icon {
+  width: 55px;
+  height: 55px;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
+}
+section.schedule .inner .schedule-table-box table.schedule-table tbody tr:nth-child(1) td {
+  border-top: 2px solid #0B090A;
+}
+section.schedule .inner .schedule-table-box table.schedule-table tbody tr:nth-last-child(1) td {
+  border: none;
+}
+section.schedule .inner .schedule-table-box .event-color-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+section.schedule .inner .schedule-table-box .event-color-box .box {
+  width: 100px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section.schedule .inner .schedule-table-box .event-color-box .box div.color {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+section.schedule .inner .schedule-table-box .event-color-box .box:nth-child(1) div {
+  background-color: #FF99C8;
+}
+section.schedule .inner .schedule-table-box .event-color-box .box:nth-child(2) div {
+  background-color: #C3F8D8;
+}
+section.schedule .inner .schedule-table-box .event-color-box .box:nth-child(3) div {
+  background-color: #A9DEF9;
+}
+section.schedule .inner .schedule-table-box .event-color-box .box:nth-child(4) div {
+  background-color: #E4C1F9;
+}
+section.schedule .inner .schedule-table-box .event-color-box .box p {
+  font-size: 0.85rem;
+  font-family: "Noto+Sans+KR", sans-serif;
+}
+
+@media (max-width: 767px) {
+  * {
+    font-size: 12px;
+  }
+  header {
+    height: 80px;
+  }
+  header .header-inner {
+    margin: auto;
+  }
+  header .header-inner .logo img {
+    width: 88px;
+    height: 30px;
+  }
+  header .header-inner nav {
+    display: none;
+  }
+  header .header-inner .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0px;
+  }
+  header .header-inner .icon button#menu {
+    border: none;
+    display: block;
+    background: no-repeat;
+  }
+  header .header-inner .icon button#menu i {
+    font-size: 2.2rem;
+  }
+  header .header-inner .icon a img {
+    width: 24px;
+    height: auto;
+    display: none;
+  }
+  header .header-inner .icon #side-menu {
+    background: #0B090A;
+    display: block !important;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    color: #FFF;
+    -webkit-transition: right 0.3s ease;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 0 20px;
+  }
+  header .header-inner .icon #side-menu.open {
+    right: 0;
+  }
+  header .header-inner .icon #side-menu #close {
+    padding: 0 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+  }
+  header .header-inner .icon #side-menu #close i {
+    font-size: 2.2rem;
+    z-index: 1000 !important;
+  }
+  header .header-inner .icon #side-menu .side-menu-top {
+    border: none;
+    margin: 10px;
+    width: 100%;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-inner .icon #side-menu .side-menu-top .logo a.logo-img {
+    display: block;
+    z-index: 1000;
+  }
+  header .header-inner .icon #side-menu .side-menu-top .logo a.logo-img img {
+    width: 88px;
+    height: 30px;
+  }
+  header .header-inner .icon #side-menu ul {
+    padding-top: 100px;
+    text-align: end;
+    margin-right: 10px;
+  }
+  header .header-inner .icon #side-menu ul li {
+    padding: 10px 0px;
+  }
+  header .header-inner .icon #side-menu ul li a {
+    padding: 10px 0;
+    font-size: 2rem;
+    font-family: "NCLNeovibes-Demo";
+  }
+  header .header-inner .icon #side-menu ul li a:hover {
+    color: #F34300;
+  }
+  section.visu {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #0B090A;
+    margin: auto;
+  }
+  section.visu span.top {
+    position: relative;
+    top: 100px;
+    font-size: 2.4rem !important;
+  }
+  section.visu .wrapwrap {
+    margin-top: 35px;
+    width: 100%;
+    height: 300px;
+  }
+  section.visu .wrapwrap .img-wrap.wrap01 {
+    z-index: 1;
+    position: relative;
+    margin-top: 50px;
+    height: 100px;
+    width: 5400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.visu .wrapwrap .img-wrap.wrap01 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16.66%;
+    -webkit-animation: eventThumbVisu01 33.3s linear infinite;
+            animation: eventThumbVisu01 33.3s linear infinite;
+  }
+  section.visu .wrapwrap .img-wrap.wrap01 div div {
+    width: 100px;
+    height: 100px;
+  }
+  section.visu .wrapwrap .img-wrap.wrap01 div div img {
+    width: 100px;
+    height: 100px;
+  }
+  section.visu .wrapwrap .img-wrap.wrap02 {
+    z-index: 1;
+    position: relative;
+    margin-top: 20px;
+    height: 100px;
+    width: 5400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.visu .wrapwrap .img-wrap.wrap02 div {
+    width: 16.66%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation: eventThumbVisu02 33.3s linear infinite;
+            animation: eventThumbVisu02 33.3s linear infinite;
+  }
+  section.visu .wrapwrap .img-wrap.wrap02 div div {
+    width: 100px;
+    height: 100px;
+  }
+  section.visu .wrapwrap .img-wrap.wrap02 div div img {
+    width: 100px;
+    height: 100px;
+  }
+  section.visu span.bottom {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2.4rem !important;
+  }
+  section.schedule {
+    width: 100%;
+    height: 1200px;
+    padding: 40px 20px;
+  }
+  section.schedule .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+  section.schedule .inner .schedule-box {
+    height: 500px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.schedule .inner .schedule-box .schedule-title h1.content-title {
+    font-size: 2.4rem;
+    font-family: "NCLNeovibes-Demo";
+  }
+  section.schedule .inner .schedule-box .schedule-content {
+    width: 100%;
+    height: 320px;
+    border-top: 2px solid #0B090A;
+  }
+  section.schedule .inner .schedule-box .schedule-content ul.schedule-page {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.schedule .inner .schedule-box .schedule-content ul.schedule-page.active {
+    display: block;
+  }
+  section.schedule .inner .schedule-box .schedule-content ul.schedule-page li {
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid #999;
+    padding: 15px 10px;
+    font-family: "Poppins", sans-serif;
+    font-family: "Noto+Sans+KR", sans-serif;
+  }
+  section.schedule .inner .schedule-box .schedule-content ul.schedule-page li a span {
+    color: #999;
+    font-size: 0.85rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  section.schedule .inner .schedule-box .schedule-content ul.schedule-page li a p {
+    margin-top: 2px;
+    color: #505050;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  section.schedule .inner .schedule-box .content-paging {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  section.schedule .inner .schedule-box .content-paging button {
+    border: none;
+    background: none;
+    padding: 0 15px;
+    color: #999;
+  }
+  section.schedule .inner .schedule-box .content-paging button i {
+    font-size: 1.2rem;
+  }
+  section.schedule .inner .schedule-box .content-paging .content-paging-view {
+    font-size: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.schedule .inner .schedule-box .content-paging .content-paging-view .current {
+    color: #0B090A;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 5px;
+  }
+  section.schedule .inner .schedule-box .content-paging .content-paging-view .slash {
+    font-size: 1.2rem;
+    padding: 0 5px;
+  }
+  section.schedule .inner .schedule-box .content-paging .content-paging-view .total {
+    color: #999;
+    padding: 0 5px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  section.schedule .inner .schedule-table-box {
+    height: 500px;
+    width: 100%;
+    margin-top: 60px;
+  }
+  section.schedule .inner .schedule-table-box .table-title {
+    width: 100%;
+    height: 40px;
+  }
+  section.schedule .inner .schedule-table-box .table-title label select#year-select {
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: #999;
+  }
+  section.schedule .inner .schedule-table-box .table-title label select#month-select {
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table thead {
+    width: 100%;
+    height: 70px;
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table thead tr#day th {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table thead tr#day th:nth-child(1) {
+    color: #999;
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table thead tr#day th:nth-last-child(1) {
+    color: #999;
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table tbody {
+    width: 100%;
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table tbody tr td {
+    border-bottom: 1px solid #999;
+    width: 14.2857142857%;
+    height: 80px;
+    text-align: center;
+    vertical-align: top;
+    padding: 16px;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    position: relative;
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table tbody tr td .event-mark {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 27px;
+    height: 4px;
+    margin: auto;
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table tbody tr td .event-mark.broadcast {
+    background-color: #A9DEF9;
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table tbody tr td .event-mark.radio {
+    background-color: #C3F8D8;
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table tbody tr td .event-mark.perfor {
+    background-color: #E4C1F9;
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table tbody tr td .event-mark.event {
+    background-color: #FF99C8;
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table tbody tr td .weather-icon {
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table tbody tr:nth-child(1) td {
+    border-top: 2px solid #0B090A;
+  }
+  section.schedule .inner .schedule-table-box table.schedule-table tbody tr:nth-last-child(1) td {
+    border: none;
+  }
+  section.schedule .inner .schedule-table-box .event-color-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    width: 50%;
+    margin-left: auto;
+  }
+  section.schedule .inner .schedule-table-box .event-color-box .box {
+    width: 100%;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  section.schedule .inner .schedule-table-box .event-color-box .box div.color {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: 2px;
+  }
+  section.schedule .inner .schedule-table-box .event-color-box .box:nth-child(1) div {
+    background-color: #FF99C8;
+  }
+  section.schedule .inner .schedule-table-box .event-color-box .box:nth-child(2) div {
+    background-color: #C3F8D8;
+  }
+  section.schedule .inner .schedule-table-box .event-color-box .box:nth-child(3) div {
+    background-color: #A9DEF9;
+  }
+  section.schedule .inner .schedule-table-box .event-color-box .box:nth-child(4) div {
+    background-color: #E4C1F9;
+  }
+  section.schedule .inner .schedule-table-box .event-color-box .box p {
+    width: 30px;
+    font-size: 0.85rem;
+    font-family: "Noto+Sans+KR", sans-serif;
+  }
+}

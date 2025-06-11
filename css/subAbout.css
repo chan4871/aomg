@@ -1,0 +1,454 @@
+@charset "UTF-8";
+/* Import Local SCSS Files */
+/* Font Family */
+/* Font Size */
+/* Gray Color*/
+/* Object Color*/
+/* box-shadow */
+/* line */
+/* padding & margin */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+}
+
+.inner {
+  width: 1440px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+li {
+  padding: 0;
+  list-style: none;
+}
+
+/* Fontawesome */
+/* Web fonts*/
+/* NCLNeovibes-Demo */
+@font-face {
+  font-family: "NCLNeovibes-Demo";
+  src: url("../ncl_neovibes/NCLNeovibes-Demo.otf");
+}
+/* Noto+Sans+KR, Poppins */
+header {
+  background-color: #0B090A;
+  color: #0B090A;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 80px;
+  z-index: 200;
+}
+header .header-inner {
+  margin: auto;
+  width: 90%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-inner nav ul {
+  min-width: 830px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .header-inner nav ul li a {
+  color: #FFF;
+  font-family: "NCLNeovibes-Demo";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 0.85rem;
+}
+header .header-inner nav ul li a:hover {
+  color: #F34300;
+}
+header .header-inner .icon.iconColor {
+  color: #0B090A;
+}
+header .header-inner .icon button {
+  display: none;
+  background: no-repeat;
+}
+header .header-inner .icon #side-menu {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ############ 서브페이지01 - About ############*/
+.introduce {
+  width: 100%;
+  height: 900vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 100px 0;
+  background: #0B090A;
+  z-index: -5;
+}
+.introduce .first-intro {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.introduce .first-intro p {
+  color: #FFF;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+}
+.introduce .first-intro span {
+  color: #FFF;
+  font-size: 2.4rem;
+  font-family: "NCLNeovibes-Demo";
+}
+.introduce .introduce-video {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.introduce .introduce-video .intro-title {
+  position: fixed;
+  padding: 100px 0;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.introduce .introduce-video .intro-title .next-intro {
+  position: absolute;
+  color: #FFF;
+  font-size: 180px;
+  font-family: "NCLNeovibes-Demo";
+  line-height: 1;
+  opacity: 0;
+  top: -50%;
+  -webkit-transform: 0.5s;
+          transform: 0.5s;
+  text-align: left;
+}
+.introduce .introduce-video video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.introduce .introduce-video.scrolled .first-inrto {
+  opacity: 0;
+}
+.introduce .introduce-video.scrolled .next-inrto {
+  opacity: 1;
+}
+
+.about-info {
+  background: #0B090A;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 300px 0;
+  height: 1850px;
+  z-index: 1;
+}
+.about-info .about-wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 150px;
+  z-index: 100;
+}
+.about-info .about-wrap .about-content {
+  width: 450px;
+}
+.about-info .about-wrap .about-content h2 {
+  color: #F34300;
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+.about-info .about-wrap .about-content p {
+  color: #FFF;
+  font-size: 1rem;
+}
+.about-info .about-wrap .about-content:nth-child(1) {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.about-info .about-wrap .about-content:nth-child(2) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.about-info .about-wrap .about-content:nth-child(3) {
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+.about-info .about-video {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
+}
+.about-info .about-video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.85;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.location {
+  position: relative;
+  background-color: #fff;
+}
+.location .iocation-content {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.location .iocation-content .location-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.location .iocation-content .location-text .content-title {
+  font-weight: normal;
+  margin-bottom: 40px;
+  font-family: "NCLNeovibes-Demo";
+  font-size: 2.4rem;
+}
+.location .iocation-content .location-text p {
+  color: #505050;
+}
+
+/* responsive Mobile */
+@media (max-width: 767px) {
+  * {
+    font-size: 12px;
+  }
+  /* ############ Common CSS ############*/
+  .inner {
+    width: 90%;
+  }
+  header {
+    height: 80px;
+  }
+  header .header-inner {
+    margin: auto;
+  }
+  header .header-inner .logo img {
+    width: 88px;
+    height: 30px;
+  }
+  header .header-inner nav {
+    display: none;
+  }
+  header .header-inner .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0px;
+  }
+  header .header-inner .icon button#menu {
+    border: none;
+    display: block;
+    background: no-repeat;
+  }
+  header .header-inner .icon button#menu i {
+    font-size: 2.2rem;
+  }
+  header .header-inner .icon a img {
+    width: 24px;
+    height: auto;
+    display: none;
+  }
+  header .header-inner .icon #side-menu {
+    background: #0B090A;
+    display: block !important;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    color: #FFF;
+    -webkit-transition: right 0.3s ease;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 0 20px;
+  }
+  header .header-inner .icon #side-menu.open {
+    right: 0;
+  }
+  header .header-inner .icon #side-menu #close {
+    padding: 0 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+  }
+  header .header-inner .icon #side-menu #close i {
+    font-size: 2.2rem;
+    z-index: 1000 !important;
+  }
+  header .header-inner .icon #side-menu .side-menu-top {
+    border: none;
+    margin: 10px;
+    width: 100%;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-inner .icon #side-menu .side-menu-top .logo a.logo-img {
+    display: block;
+    z-index: 1000;
+  }
+  header .header-inner .icon #side-menu .side-menu-top .logo a.logo-img img {
+    width: 88px;
+    height: 30px;
+  }
+  header .header-inner .icon #side-menu ul {
+    padding-top: 100px;
+    text-align: end;
+    margin-right: 10px;
+  }
+  header .header-inner .icon #side-menu ul li {
+    padding: 10px 0px;
+  }
+  header .header-inner .icon #side-menu ul li a {
+    padding: 10px 0;
+    font-size: 2rem;
+    font-family: "NCLNeovibes-Demo";
+  }
+  header .header-inner .icon #side-menu ul li a:hover {
+    color: #F34300;
+  }
+  /* ############ 서브페이지01 - About ############*/
+  .introduce {
+    height: 300vh;
+  }
+  .introduce .introduce-video .intro-title .next-intro {
+    font-size: 80px;
+  }
+  .about-info {
+    height: 1050px;
+    padding: 100px 0;
+  }
+  .about-info .about-wrap {
+    gap: 100px;
+  }
+  .about-info .about-wrap .about-content {
+    width: 80%;
+  }
+  .about-info .about-wrap .about-content h2 {
+    margin-bottom: 1rem;
+  }
+  .about-info .about-wrap .about-content p {
+    font-size: 1.2rem;
+  }
+  .about-info .about-wrap .about-content:nth-child(1) {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .about-info .about-wrap .about-content:nth-child(2) {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .about-info .about-wrap .about-content:nth-child(3) {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .about-info .about-video {
+    height: 50%;
+  }
+  .location .iocation-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .location .iocation-content .location-text {
+    width: 80%;
+    text-align: center;
+    margin: 70px 0;
+  }
+  .location .iocation-content .location-text .content-title {
+    margin-bottom: 1rem;
+  }
+  .location .iocation-content .location-map {
+    height: 390px !important;
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}

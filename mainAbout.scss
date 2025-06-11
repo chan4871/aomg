@@ -1,0 +1,125 @@
+/* Import Local SCSS file*/
+@import 'fonts', 'reset', 'variables';
+
+/* ############ Common CSS ############*/
+* {
+    font-family: $primary-en;
+}
+html{scroll-behavior: smooth;}
+.inner {
+    width: 1440px;
+    margin: auto;
+}
+
+.content-title {
+    font-size: $title;
+    font-family: $primary-en;
+}
+
+/* ############  section04(ABOUT) ############*/
+.section04 {
+    background: url(../images/section04-company.png) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    .inner {
+        height: 100vh;
+        position: relative;
+
+        .section04-title {
+            margin-top: 130px;
+            position: absolute;
+            width: 100%;
+
+            span {
+                font-family: $primary-en;
+                color: $main-color;
+                font-size: 200px;
+                line-height: 0.8;
+                letter-spacing: -5px;
+            }
+
+        }
+
+        .section04-view-more {
+            position: absolute;
+            right: 0;
+            top: 50%;
+
+            a {
+                display: flex;
+
+                &:hover {
+                    img {
+                        transform: translateX(-155px);
+                    }
+                }
+
+                .arrow-wrap {
+                    width: 155px;
+                    overflow: hidden;
+
+                    img {
+                        margin-top: 15px;
+                        transition: .5s;
+                    }
+                }
+
+                h4 {
+                    font-family: $primary-en;
+                    font-size: $subTitle;
+                    color: $white;
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+}
+
+/* responsive Mobile */
+@media (max-width:767px) {
+    * {
+        font-size: 12px;
+    }
+
+    /* ############ Common CSS ############*/
+    .inner {
+        width: 90%;
+    }
+
+    /* ########## ABOUT ########## */
+    .section04 {
+        .inner {
+            width: 90%;
+
+            .section04-title {
+                width: 70%;
+                position: absolute;
+                margin-top: 0;
+                top: 20%;
+
+                span {
+                    font-size: 66px;
+                }
+            }
+
+            .section04-view-more {
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+
+                a {
+                    
+
+                    .arrow-wrap {}
+
+                    h4 {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <!-- 파비콘 -->
+  <link rel="icon" href="images/Globe.png">
+  <!-- AOS 라이브러리 불러오기-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <!-- Map -->
+  <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=x8jnkin8zf"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/subAbout.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo" id="headerLogo">
+        <a href="index.html"><img src="images/main-header-logo.png" alt="logo-img"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="subAbout.html">ABOUT</a></li>
+          <li><a href="subArtist.html">ARTIST</a></li>
+          <li><a href="subSchedule.html">SCHEDULE</a></li>
+          <li><a href="subNews.html">NEWS</a></li>
+          <li><a href="subStore.html">STORE</a></li>
+        </ul>
+      </nav>
+      <div class="icon">
+        <button id="menu">
+          <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </button>
+        <div id="side-menu">
+          <div class="side-menu-top">
+            <div class="logo">
+              <a href="#none" class="logo-img"><img src="images/main-header-logo.png" alt="logo-img"></a>
+            </div>
+            <div id="close"><i class="fa-solid fa-x" style="color: #ffffff;"></i></div>
+          </div>
+          <ul>
+            <li><a href="subAbout.html">ABOUT</a></li>
+            <li><a href="subArtist.html">ARTIST</a></li>
+            <li><a href="subSchedule.html">SCHEDULE</a></li>
+            <li><a href="subNews.html">NEWS</a></li>
+            <li><a href="subStore.html">STORE</a></li>
+          </ul>
+        </div>
+        <a href="#none">
+          <img src="images/main-header-cart.png" alt="cart-img">
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- 서브페이지01 - About -->
+  <!-- Video Event -->
+  <section class="introduce">
+    <div class="first-intro">
+      <p>About AOMG</p>
+      <span>Introduce</span>
+    </div>
+    <div class="introduce-video">
+      <div class="intro-title inner">
+        <div class="next-intro">
+          MAKE<br>IT<br>NEW
+        </div>
+      </div>
+        <video src="images/sub-about-video.mp4" loop autoplay muted></video>
+    </div>
+  </section>
+  <!-- About info -->
+  <section class="about-info">
+    <div class="about-wrap inner">
+      <div class="about-content" data-aos="fade-up" data-aos-duration="1000">
+        <h2>차별화된 음악과 꾸준한 발전</h2>
+        <p>
+          AOMG는 2013년 설립 이후 감각적이고 차별화된 음악과 콘텐츠로 독자적인 색깔을 구축했으며, 음악과 비주얼 전반에서 대중성과 예술성을 겸비한 브랜드로 성장했습니다.
+        </p>
+      </div>
+      <div class="about-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <h2>무대를 확장하는 움직임</h2>
+        <p>
+          AOMG는 콘서트 투어와 다양한 방송·콘텐츠 활동을 통해 관객과 적극적으로 소통하며, 아티스트들이 음악을 넘어 다방면에서 영향력을 발휘하는 크리에이터로 성장할 수 있는 기반을 마련해왔습니다.
+        </p>
+      </div>
+      <div class="about-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <h2>글로벌 브랜드로의 도약</h2>
+        <p>AOMG는 국내에서 쌓아온 탄탄한 기반을 바탕으로 해외 투어와 콘텐츠 유통을 통해 글로벌 팬들과 소통하며, K-힙합을 대표하는 브랜드로 성장했습니다. AOMG는 음악과 문화를 중심으로 글로벌 전략을 확장해 나갈 것입니다.</p>
+      </div>
+    </div>
+    <div class="about-video">
+      <video src="images/video.mp4" autoplay loop muted></video>
+    </div>
+  </section>
+  <!-- Location -->
+  <section class="location">
+    <div class="iocation-content inner">
+      <div class="location-text">
+        <h1 class="content-title">LOCATION</h1>
+        <p>
+          서울특별시 성동구 독서당로 198 (옥수동)<br>
+          198, Dokseodang-ro, Seongdong-gu, Seoul, Republic of Korea
+        </p>
+      </div>
+      <div class="location-map" id="map" style="width:720px;height:720px;"></div>
+    </div>
+  </section>
+  <!-- footer --> 
+  <footer class="footer-content">
+    <div class="content-items inner">
+      <div class="content-item">
+        <div class="item-left">
+          <div class="logo">
+            <img src="images/AOMG+LOGO_W.png" alt="">
+          </div>
+          <div class="decs">
+            <span>Contact.</span>
+            <span>
+              <strong>Information</strong><br>
+              <a href="https://www.aomgofficial.com/">info@aomgofficial.com</a>
+            </span>
+            <span>© AOMG ENTERTAINMENT. All rights reserved.</span>
+          </div>
+        </div>
+        <div class="item-right">
+          <div class="top-btn">
+            <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+          </div>
+          <div class="footer-sns">
+            <a href="https://x.com/AOMGOFFICIAL" class="sns" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/AOMGOFFICIAL" class="sns" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/aomgofficial/" class="sns" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCW5gbSGTGIukUDsPt2sdhGw" class="sns" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div class="footer-bar-line">
+        <div class="footer-bar-linetext">
+          <p>AOMG 엔터테이먼트의 모든 콘텐츠는 저작권의 보호를 받고 있습니다.</p>
+          <p>AOMG 엔터테이먼트의 모든 콘텐츠는 저작권의 보호를 받고 있습니다.</p>
+          <p>AOMG 엔터테이먼트의 모든 콘텐츠는 저작권의 보호를 받고 있습니다.</p>
+          <p>AOMG 엔터테이먼트의 모든 콘텐츠는 저작권의 보호를 받고 있습니다.</p>
+          <p>AOMG 엔터테이먼트의 모든 콘텐츠는 저작권의 보호를 받고 있습니다.</p>
+        </div>
+        <div class="footer-bar-linetext">
+          <p>AOMG 엔터테이먼트의 모든 콘텐츠는 저작권의 보호를 받고 있습니다.</p>
+          <p>AOMG 엔터테이먼트의 모든 콘텐츠는 저작권의 보호를 받고 있습니다.</p>
+          <p>AOMG 엔터테이먼트의 모든 콘텐츠는 저작권의 보호를 받고 있습니다.</p>
+          <p>AOMG 엔터테이먼트의 모든 콘텐츠는 저작권의 보호를 받고 있습니다.</p>
+          <p>AOMG 엔터테이먼트의 모든 콘텐츠는 저작권의 보호를 받고 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS 스크립트 시작 -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- GSAP & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <!-- custom -->
+  <script src="js/subAbout.js"></script>
+  <script src="js/swiper.js"></script>
+</body>
+</html>

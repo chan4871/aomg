@@ -1,0 +1,221 @@
+/* Import Local SCSS Files */
+@import 'variables', 'reset', 'fonts';
+
+/* ############ Footer ############*/
+.footer-content {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    background: $main-black;
+    overflow: hidden;
+
+    .content-items {
+        height: 500px;
+        padding: $main-margin;
+
+        .content-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .item-left,
+            .item-right {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .item-left {
+                display: flex;
+                justify-content: space-between;
+
+                .logo {
+                    width: 175px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .decs {
+                    display: flex;
+                    flex-direction: column;
+
+                    span,
+                    strong {
+                        color: $white;
+                        font-size: $body-title;
+                        margin-top: 2rem;
+                    }
+
+                    span:nth-child(1) {
+                        font-weight: 600;
+                    }
+
+                    span:nth-child(2) {
+                        text-decoration: underline;
+                    }
+
+                    span:nth-child(3) {
+                        font-size: $body;
+                    }
+                }
+            }
+
+            .item-right {
+                justify-content: space-between;
+                position: relative;
+
+                .top-btn {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border: 2px solid $white;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    line-height: 55px;
+                    text-align: center;
+
+                    a {
+                        i {
+                            color: $white;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                .footer-sns {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 40px;
+
+                    a {
+                        i {
+                            color: $white;
+                            font-size: 40px;
+                            transition: 0.2s;
+
+                            &:hover {
+                                opacity: 0.35;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bar {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        background: $main-color;
+        display: flex;
+        align-items: center;
+
+        .footer-bar-line {
+            display: flex;
+            white-space: nowrap;
+        }
+
+        .footer-bar-linetext {
+            display: flex;
+            animation: fani 30s linear infinite;
+            gap: 20px;
+
+            p {
+                font-size: $txt-small;
+                color: $main-black;
+                margin: 0 2rem;
+            }
+        }
+
+        @keyframes fani {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+html{scroll-behavior: smooth;}
+/* responsive Mobile */
+@media (max-width:767px) {
+    * {
+        font-size: 12px;
+    }
+
+    /* ############ Common CSS ############*/
+    .inner {
+        width: 90%;
+    }
+
+    /* ############ Footer ############*/
+    .footer-content {
+        height: 80%;
+
+        .content-items {
+            .content-item {
+                flex-direction: column;
+                align-items: flex-start;
+
+                .item-left {
+                    flex: 2;
+
+                    .logo {
+                        width: 88px;
+                    }
+
+                    .decs {
+                        span{
+                            a{font-family: $secondary-en;}
+                        }
+                        span,
+                        strong {
+                            font-family: $secondary-en;
+                            color: $white;
+                        }
+                    }
+                }
+
+                .item-right {
+                    flex: 1;
+                    width: 100%;
+                    .top-btn {
+                        right: 0;
+                        width: 50px; height: 50px;
+                        top: -250px;
+                        i{transform: translateY(-4px);}
+                    }
+
+                    .footer-sns {
+                        left: 0;
+                        gap: 25px;
+                        width: 50%;
+                        a {
+                            i {
+                                color: $white;
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-bar {
+            height: 30px;
+        }
+    }
+}

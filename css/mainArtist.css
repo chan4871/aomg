@@ -1,0 +1,325 @@
+/* Import Local SCSS Files */
+/* Font Family */
+/* Font Size */
+/* Gray Color*/
+/* Object Color*/
+/* box-shadow */
+/* line */
+/* padding & margin */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+}
+
+.inner {
+  width: 1440px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+li {
+  padding: 0;
+  list-style: none;
+}
+
+/* Fontawesome */
+/* Web fonts*/
+/* NCLNeovibes-Demo */
+@font-face {
+  font-family: "NCLNeovibes-Demo";
+  src: url("../ncl_neovibes/NCLNeovibes-Demo.otf");
+}
+/* Noto+Sans+KR, Poppins */
+html {
+  scroll-behavior: smooth;
+}
+
+section.section02 {
+  width: 100%;
+  height: 5130px;
+  background-color: #0B090A;
+  position: relative;
+}
+section.section02 .inner {
+  min-height: 100%;
+  padding: 100px 0;
+  height: 100%;
+  position: relative;
+}
+section.section02 .inner .artist-name {
+  position: sticky;
+  top: 100px;
+  left: 240px;
+}
+section.section02 .inner .artist-name h1.content-title {
+  width: 650px;
+  cursor: pointer;
+  font-family: "NCLNeovibes-Demo";
+  color: #FFF;
+  font-size: 2.4rem;
+}
+section.section02 .inner .artist-name h1.content-title:hover {
+  color: #F34300;
+}
+section.section02 .inner .artist-name h1.content-title.highlight {
+  color: #F34300;
+}
+section.section02 .inner .artist-click-img {
+  position: sticky;
+  top: 800px;
+  -webkit-transform: translateY(-700px);
+          transform: translateY(-700px);
+  margin-left: auto;
+  width: 50%;
+  height: 100px;
+}
+section.section02 .inner .artist-click-img img {
+  width: 100%;
+  height: 850px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  right: 0;
+  -o-object-position: top;
+     object-position: top;
+  z-index: 101;
+  display: none;
+}
+section.section02 .inner .artist-click-img img.active {
+  display: block;
+}
+section.section02 .artist-img {
+  z-index: 100;
+  overflow: hidden;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+section.section02 .artist-img.hidden {
+  display: none;
+}
+section.section02 .artist-img .artist-img-box {
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+}
+section.section02 .artist-img .artist-img-box img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.section02 .artist-img .artist-img-box img:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+section.section02 .artist-img .artist-img-box.artist-img-box01 {
+  width: 19vw;
+  height: auto;
+  top: 0%;
+  left: 49.9%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 1;
+}
+section.section02 .artist-img .artist-img-box.artist-img-box02 {
+  width: 21vw;
+  height: auto;
+  top: 9.45%;
+  left: 73.79%;
+}
+section.section02 .artist-img .artist-img-box.artist-img-box03 {
+  width: 20vw;
+  height: auto;
+  top: 17.95%;
+  left: 39.32%;
+}
+section.section02 .artist-img .artist-img-box.artist-img-box04 {
+  width: 20vw;
+  height: auto;
+  top: 33.59%;
+  left: 41.56%;
+}
+section.section02 .artist-img .artist-img-box.artist-img-box05 {
+  top: 36.62%;
+  left: 66.92%;
+  width: 30.5vw;
+  height: auto;
+}
+section.section02 .artist-img .artist-img-box.artist-img-box06 {
+  width: 20vw;
+  height: auto;
+  top: 49.36%;
+  left: 52.5%;
+}
+section.section02 .artist-img .artist-img-box.artist-img-box07 {
+  width: 20vw;
+  height: auto;
+  top: 52.71%;
+  left: 77.29%;
+}
+section.section02 .artist-img .artist-img-box.artist-img-box08 {
+  width: 30.5vw;
+  height: auto;
+  top: 68.74%;
+  left: 40.33%;
+}
+section.section02 .artist-img .artist-img-box.artist-img-box09 {
+  width: 20vw;
+  height: auto;
+  top: 70.82%;
+  left: 76.2%;
+}
+section.section02 .artist-img .artist-img-box.artist-img-box10 {
+  width: 20vw;
+  height: auto;
+  top: 81.79%;
+  left: 58.13%;
+}
+
+/* responsive Mobile */
+@media (max-width: 767px) {
+  * {
+    font-size: 12px;
+  }
+  /* section.section02 */
+  section.section02 {
+    height: 1900px;
+  }
+  section.section02 .inner {
+    width: 90%;
+    padding: 100px 0;
+    height: 100%;
+  }
+  section.section02 .inner .artist-name {
+    position: sticky;
+    top: 100px;
+    left: 240px;
+  }
+  section.section02 .inner .artist-name h1.content-title {
+    font-family: "NCLNeovibes-Demo";
+    color: #FFF;
+    font-size: 2rem;
+  }
+  section.section02 .inner .artist-name h1.content-title.highlight {
+    color: #F34300;
+  }
+  section.section02 .artist-img {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  section.section02 .artist-img .artist-img-box {
+    position: absolute;
+    z-index: 10;
+  }
+  section.section02 .artist-img .artist-img-box img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  section.section02 .artist-img .artist-img-box :hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  section.section02 .artist-img .artist-img-box.artist-img-box01 {
+    width: 24vw;
+    height: auto;
+    top: 0%;
+    left: 49.9%;
+    -webkit-transition: 1s;
+    transition: 1s;
+    z-index: 1;
+  }
+  section.section02 .artist-img .artist-img-box.artist-img-box02 {
+    width: 27vw;
+    height: auto;
+    top: 8.05%;
+    left: 70.79%;
+  }
+  section.section02 .artist-img .artist-img-box.artist-img-box03 {
+    width: 26vw;
+    height: auto;
+    top: 17.95%;
+    left: 39.32%;
+  }
+  section.section02 .artist-img .artist-img-box.artist-img-box04 {
+    width: 25vw;
+    height: auto;
+    top: 30.59%;
+    left: 41.56%;
+  }
+  section.section02 .artist-img .artist-img-box.artist-img-box05 {
+    top: 36.62%;
+    left: 62.92%;
+    width: 35.5vw;
+    height: auto;
+  }
+  section.section02 .artist-img .artist-img-box.artist-img-box06 {
+    width: 26vw;
+    height: auto;
+    top: 46.36%;
+    left: 46.5%;
+  }
+  section.section02 .artist-img .artist-img-box.artist-img-box07 {
+    width: 28vw;
+    height: auto;
+    top: 50.71%;
+    left: 72%;
+  }
+  section.section02 .artist-img .artist-img-box.artist-img-box08 {
+    width: 35.5vw;
+    height: auto;
+    top: 65.74%;
+    left: 40.33%;
+  }
+  section.section02 .artist-img .artist-img-box.artist-img-box09 {
+    width: 26vw;
+    height: auto;
+    top: 70.82%;
+    left: 75%;
+  }
+  section.section02 .artist-img .artist-img-box.artist-img-box10 {
+    width: 25vw;
+    height: auto;
+    top: 81.79%;
+    left: 58.13%;
+  }
+}

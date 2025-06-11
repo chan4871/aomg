@@ -1,0 +1,49 @@
+/* Font Family */
+$primary-kr : 'Noto+Sans+KR',
+sans-serif;
+$primary-en : 'NCLNeovibes-Demo';
+$secondary-en: 'Poppins', sans-serif;
+
+/* Font Size */
+$title: 2.4rem;
+$title-small: 2rem;
+$subTitle: 1.8rem;
+$subTitle-small: 1.6rem;
+$body-megaTitle: 1.4rem;
+$body-title: 1.2rem;
+$body: 1rem;
+$txt: 0.85rem;
+$txt-small: 0.6rem;
+
+/* Gray Color*/
+$main-black: #0B090A; //메인 블랙 컬러!
+$dim-black: #505050;
+$silver-black: #777;
+$light-black: #999;
+$dark-gray: #BDBDBD;
+$dim-gray: #ddd;
+$silver-gray: #eee;
+$light-gray: #F5F5F5;
+$white: #FFF;
+
+/* Object Color*/
+$main-color: #F34300;
+$pink: #FF99C8;
+$green: #C3F8D8;
+$blue: #A9DEF9;
+$purple: #E4C1F9;
+
+/* box-shadow */
+$shadow: 10px 10px 10px 10px rgba(11, 9, 10, 0.35);
+
+/* line */
+$line-bold: 3px solid #0B090A;
+$line-middle: 2px solid #0B090A;
+$line-light: 1px solid #999;
+$line-dotted: 1px dotted #999;
+
+/* padding & margin */
+$main-padding: 100px 0;
+$main-margin: 70px 0;
+$section-margin: 120px 0;
+$pagenumber-margin: 40px 0;

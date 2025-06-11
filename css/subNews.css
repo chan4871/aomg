@@ -1,0 +1,411 @@
+/* Import Local SCSS Files */
+/* Font Family */
+/* Font Size */
+/* Gray Color*/
+/* Object Color*/
+/* box-shadow */
+/* line */
+/* padding & margin */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+}
+
+.inner {
+  width: 1440px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+li {
+  padding: 0;
+  list-style: none;
+}
+
+/* Fontawesome */
+/* Web fonts*/
+/* NCLNeovibes-Demo */
+@font-face {
+  font-family: "NCLNeovibes-Demo";
+  src: url("../ncl_neovibes/NCLNeovibes-Demo.otf");
+}
+/* Noto+Sans+KR, Poppins */
+header {
+  background-color: #0B090A;
+  color: #0B090A;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 80px;
+  z-index: 200;
+}
+header .header-inner {
+  margin: auto;
+  width: 90%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-inner nav ul {
+  min-width: 830px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .header-inner nav ul li a {
+  color: #FFF;
+  font-family: "NCLNeovibes-Demo";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 0.85rem;
+}
+header .header-inner nav ul li a:hover {
+  color: #F34300;
+}
+header .header-inner .icon.iconColor {
+  color: #0B090A;
+}
+header .header-inner .icon button {
+  display: none;
+  background: no-repeat;
+}
+header .header-inner .icon #side-menu {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section.news {
+  padding: 250px 0;
+}
+section.news .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.news .inner .news-title div.news-tab01 {
+  margin-top: -20px;
+}
+section.news .inner .news-title div.news-tab01 span {
+  font-family: "NCLNeovibes-Demo";
+  font-size: 2.4rem;
+}
+section.news .inner .news-title div.news-tab02 {
+  margin-top: -20px;
+}
+section.news .inner .news-title div.news-tab02 span.en {
+  font-family: "NCLNeovibes-Demo";
+  color: #999;
+  font-size: 2rem;
+}
+section.news .inner .news-title div.news-tab02 span.kr {
+  font-family: "Noto+Sans+KR", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #999;
+  line-height: 2.4rem;
+}
+section.news .inner .news-content table#news-table {
+  width: 1110px;
+  height: 780px;
+  border-top: 3px solid #0B090A;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+section.news .inner .news-content table#news-table thead tr th {
+  padding: 20px 40px;
+  font-size: 1.2rem;
+  color: #0B090A;
+  font-family: "Noto+Sans+KR", sans-serif;
+}
+section.news .inner .news-content table#news-table thead tr th.category {
+  width: 20%;
+}
+section.news .inner .news-content table#news-table thead tr th.date {
+  width: 20%;
+}
+section.news .inner .news-content table#news-table tbody tr td {
+  font-family: "Noto+Sans+KR", sans-serif;
+  border-top: 1px dotted #999;
+  padding: 20px 40px;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #505050;
+  cursor: pointer;
+}
+section.news .inner .news-content table#news-table tbody tr td:hover:nth-child(2) {
+  color: #0B090A;
+  text-decoration: underline;
+}
+section.news .inner .news-content table#news-table tbody tr td.news-title {
+  text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section.news .inner .news-content table#news-table tbody tr.active {
+  color: #0B090A;
+  font-weight: bold;
+}
+section.news .inner .news-content table#news-table tbody tr.hidden {
+  display: none;
+}
+section.news .inner .news-content .pagination {
+  padding-top: 80px;
+  margin: auto;
+  text-align: center;
+}
+section.news .inner .news-content .pagination button {
+  background: none;
+  border: none;
+  padding: 5px 15px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #0B090A;
+}
+section.news .inner .news-content .pagination .page-btn {
+  background: none;
+  border: none;
+  padding: 5px 15px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #0B090A;
+}
+section.news .inner .news-content .pagination .page-btn.active {
+  color: #F34300;
+  font-weight: bold;
+}
+
+/* responsive Mobile */
+@media (max-width: 767px) {
+  * {
+    font-size: 12px;
+  }
+  /* ############ Common CSS ############*/
+  .inner {
+    width: 90%;
+  }
+  header {
+    height: 80px;
+  }
+  header .header-inner {
+    margin: auto;
+  }
+  header .header-inner .logo img {
+    width: 88px;
+    height: 30px;
+  }
+  header .header-inner nav {
+    display: none;
+  }
+  header .header-inner .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0px;
+  }
+  header .header-inner .icon button#menu {
+    border: none;
+    display: block;
+    background: no-repeat;
+  }
+  header .header-inner .icon button#menu i {
+    font-size: 2.2rem;
+  }
+  header .header-inner .icon a img {
+    width: 24px;
+    height: auto;
+    display: none;
+  }
+  header .header-inner .icon #side-menu {
+    background: #0B090A;
+    display: block !important;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    color: #FFF;
+    -webkit-transition: right 0.3s ease;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 0 20px;
+  }
+  header .header-inner .icon #side-menu.open {
+    right: 0;
+  }
+  header .header-inner .icon #side-menu #close {
+    padding: 0 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+  }
+  header .header-inner .icon #side-menu #close i {
+    font-size: 2.2rem;
+    z-index: 1000 !important;
+  }
+  header .header-inner .icon #side-menu .side-menu-top {
+    border: none;
+    margin: 10px;
+    width: 100%;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-inner .icon #side-menu .side-menu-top .logo a.logo-img {
+    display: block;
+    z-index: 1000;
+  }
+  header .header-inner .icon #side-menu .side-menu-top .logo a.logo-img img {
+    width: 88px;
+    height: 30px;
+  }
+  header .header-inner .icon #side-menu ul {
+    padding-top: 100px;
+    text-align: end;
+    margin-right: 10px;
+  }
+  header .header-inner .icon #side-menu ul li {
+    padding: 10px 0px;
+  }
+  header .header-inner .icon #side-menu ul li a {
+    padding: 10px 0;
+    font-size: 2rem;
+    font-family: "NCLNeovibes-Demo";
+  }
+  header .header-inner .icon #side-menu ul li a:hover {
+    color: #F34300;
+  }
+  section.news {
+    padding-top: 200px;
+    padding-bottom: 120px;
+  }
+  section.news .inner {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.news .inner .news-title div.news-tab02 span.kr br {
+    display: none;
+  }
+  section.news .inner .news-content {
+    margin-top: 40px;
+  }
+  section.news .inner .news-content table#news-table {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    border-top: 3px solid #0B090A;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  section.news .inner .news-content table#news-table thead tr th {
+    padding: 20px 10px;
+  }
+  section.news .inner .news-content table#news-table thead tr th.date {
+    display: none;
+  }
+  section.news .inner .news-content table#news-table thead tr th.category {
+    width: 20%;
+  }
+  section.news .inner .news-content table#news-table tbody tr td {
+    padding: 20px 20px;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #505050;
+  }
+  section.news .inner .news-content table#news-table tbody tr td.date {
+    display: none;
+  }
+  section.news .inner .news-content table#news-table tbody tr td.news-title {
+    text-align: start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  section.news .inner .news-content table#news-table tbody tr.active {
+    color: #0B090A;
+    font-weight: bold;
+  }
+  section.news .inner .news-content table#news-table tbody tr.hidden {
+    display: none;
+  }
+  section.news .inner .news-content .pagination {
+    padding-top: 80px;
+    margin: auto;
+    text-align: center;
+  }
+  section.news .inner .news-content .pagination button {
+    background: none;
+    border: none;
+    padding: 5px 15px;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: #0B090A;
+  }
+  section.news .inner .news-content .pagination .page-btn {
+    background: none;
+    border: none;
+    padding: 5px 15px;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: #0B090A;
+  }
+  section.news .inner .news-content .pagination .page-btn.active {
+    color: #F34300;
+    font-weight: bold;
+  }
+}
