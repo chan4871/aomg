@@ -28,15 +28,20 @@
 ## 🗂️주요 페이지 구성
 # 💁‍♂️ 메인페이지
 - header
+- ![image](https://github.com/user-attachments/assets/4fb4596b-bd84-4aab-9dc4-2961b3c7b0a6)
+- ![image](https://github.com/user-attachments/assets/49f50a94-071b-4472-a3a9-6474976f846f)
     aomg의 로고 배치, 로고와 비슷한 서체의 영문체 사용, 오버 시 포인트 컬러 전환 효과
     사용자의 스크롤 값에 따라 투명도 또는 배경색을 주어 편의성 제공
     반응형으로 실행 시 상단 네비게이션 사라지며, 오른쪽 상단 햄버거 기능 포함
     반응형의 햄버거 버튼을 클릭하면 오른쪽에서 왼쪽으로 서브 페이지 보여짐
 - Main
+
     신규 뮤직비디오 영상 재생을 통해 비주얼적으로 보여지는 배경- 스와이퍼 슬라이드 기능 포함
     prev, next 버튼 또는 손가락 슬라이딩을 통해 스와이퍼 가능
     클릭 시 해당 뮤직비디오와 연결된 url로 이동 가능
 - section01(introduction)
+- ![image](https://github.com/user-attachments/assets/4c7d4c15-3dcb-4ccc-878a-f5b6f66f9520)
+
     볼드한 텍스트로 시각적인 효과를 주며, 브랜드 아이덴티티를 강조하는 메세지 전달
     신규 발매한 앨범 소개- 스와이퍼 기능으로 구현
 - section02(artist)
@@ -77,10 +82,15 @@
     전체적인 제품을 소개하는 페이지는 간격을 조절한 후 페이지네이션 기능 활용
 
 ## 🧩 사용 기술
-- **HTML / SCSS / JavaScript**
-- **GSAP (ScrollTrigger)** : 스크롤 트리거 기반 애니메이션
-- **AOS (Animate on Scroll)** : 스크롤 시 요소 애니메이션
-- **OpenWeather API** : 실시간 날씨 정보 연동
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![AOS](https://img.shields.io/badge/AOS-3ED0F7?style=for-the-badge&logo=&logoColor=white)
+![GSAP ScrollTrigger](https://img.shields.io/badge/GSAP_ScrollTrigger-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
+
+## 🤸‍♂️ 사용 api
+![OpenWeather](https://img.shields.io/badge/OpenWeather-1E90FF?style=for-the-badge&logo=weather&logoColor=white)
+![Naver Map](https://img.shields.io/badge/Naver_Map-03C75A?style=for-the-badge&logo=&logoColor=white)
 
 ## 📁 폴더 구조
 ```
@@ -128,7 +138,7 @@
 
 ```
 
-📝 설치 및 실행 방법
+## 📝 설치 및 실행 방법
 별도의 빌드 환경 없이 정적 페이지 형태로 동작합니다.
 웹 서버 또는 로컬에서 다음과 같이 실행할 수 있습니다:
     # VSCode Live Server 또는
@@ -140,7 +150,7 @@
 - 날씨 API: OpenWeather API
 - 스크롤 인터랙션: GSAP & AOS
 
-💬 제작 의도
+## 💬 제작 의도
 본 프로젝트는 브랜드의 개성을 살리는 웹 디자인과 동시에,
 사용자 중심의 편리한 인터페이스를 통해 방문자가 쉽게 정보를 탐색할 수 있도록 구성하였습니다.
 AOMG 팬들과 대중 모두에게 유용한 포털로 작동하길 기대합니다.
