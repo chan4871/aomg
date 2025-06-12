@@ -30,6 +30,9 @@
 - header
 - ![image](https://github.com/user-attachments/assets/4fb4596b-bd84-4aab-9dc4-2961b3c7b0a6)
 - ![image](https://github.com/user-attachments/assets/49f50a94-071b-4472-a3a9-6474976f846f)
+- ![image](https://github.com/user-attachments/assets/373f43d0-1e0b-4e10-8f55-ebf46c7357dd)
+![image](https://github.com/user-attachments/assets/1d58c3f1-da92-468e-a265-015ab4508bf7)
+
     aomg의 로고 배치, 로고와 비슷한 서체의 영문체 사용, 오버 시 포인트 컬러 전환 효과
     사용자의 스크롤 값에 따라 투명도 또는 배경색을 주어 편의성 제공
     반응형으로 실행 시 상단 네비게이션 사라지며, 오른쪽 상단 햄버거 기능 포함
@@ -49,34 +52,47 @@
     데이터 값을 활용해 아티스트 이름 클릭 시 해당 이미지 표시 기능 포함
     배경 클릭 시 원래 상태로 돌아가도록 구현
 - section03(news)
+- ![image](https://github.com/user-attachments/assets/77f54f2d-a843-4aba-be5a-08308c20be1f)
     스와이퍼 기능을 통해 뉴스 내용 확인 가능
     해당 회사에 관련한 뉴스 기사를 가독성 있게 전달
 - section04(about)
+- 
     회사 이미지를 보여줌과 동시에 서브페이지로 넘어갈 수 있도록 텍스트 오버 효과
 - Footer
+- ![image](https://github.com/user-attachments/assets/dab4b1e5-d7f1-49f8-8dcc-86944a407e8c)
     x, 페이스북, 인스타그램, 유튜브 등 SNS 아이콘을 통한 외부 채널 연결
     하단 푸터를 통해 사이트 정보 및 완성도 강화
   
 # 💁‍♂️ 서브페이지
 - about(회사 소개 페이지)
+- ![image](https://github.com/user-attachments/assets/55dd2546-fb40-462c-915c-838ac8e0bb50)
+- ![image](https://github.com/user-attachments/assets/2a3d5815-a5c7-474f-afe0-0e3e668eefc3)
     aomg 소속 아티스트의 공연 영상 요소에 스크롤 트리거를 활용하여 확대하며 몰입감을 줌
     aomg의 비전 및 가치, 회사에 대해 소개하는 글을 aos 활용하여 보여줌
     로고 이미지를 3d영상으로 띄워 힙합 레이블인 브랜드 아이덴티티를 강조하는 분위기 조성
     회사의 위치 소개와 지도api 기능을 활용하여 시각적으로 보여줌
 - artist(아티스트 소개 페이지, 아티스트 인포페이지 포함)
+- ![image](https://github.com/user-attachments/assets/1c620585-5a00-4629-973b-3374e7413838)
+- ![image](https://github.com/user-attachments/assets/6429d1c5-be41-4309-a9f5-48671d5b2a33)
     아티스트 리스트를 스와이퍼 슬라이드로 구현
     아티스트 이미지 클릭 시 해당 아티스트의 상세 정보를 확인하는 인포페이지로 이동
     아티스트 이미지 오버 시 해당 아티스트 이름 표시 기능 포함
     하단에 배치된 바로 스크롤 및 확인 가능
 - schedule(스케줄)
+![image](https://github.com/user-attachments/assets/20d7a530-0e5f-4038-8a5d-3adbafc5522d)
+
     왼쪽 리스트 섹션, 아티스트의 자세한 일정 확인 가능
     각 날짜별로 방송, 공연, 생일 등 이벤트 표시
     OpenWeather API를 이용한 날씨 정보 연동 후 달력에 표시
     상단 비주얼 영역, 썸네일 이미지에 GSAP 스크롤 애니메이션 포함
 - news(뉴스 페이지)
+![image](https://github.com/user-attachments/assets/012846cf-045f-42d7-a1b6-12ac96a8e4de)
+
     table 요소를 활용한 리스트 형태의 뉴스 기사 페이지
     많은 정보를 쉽게 찾고 파악하도록 페이지네이션 활용
 - store(굿즈 페이지)
+- ![image](https://github.com/user-attachments/assets/e5868fb9-bb76-4094-8aa4-ac26b1c0be85)
+
     aomg소속 아티스트들의 굿즈를 소개하는 스토어 페이지
     스와이퍼 슬라이드를 활용해 베스트 아이템과 신규 앨범을 확인 가능
     전체적인 제품을 소개하는 페이지는 간격을 조절한 후 페이지네이션 기능 활용
