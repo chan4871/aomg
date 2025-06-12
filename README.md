@@ -19,14 +19,70 @@
 
 
 ## 📅 기간
-- 기획: 3일 (2025년 05월 14일 ~ 2025년 05월 16일)
-- 디자인: 5일 (2025년 05월 19일 ~ 2025년 05월 23일)
-- 개발: 10일 (2025년 05월 26일 ~ 2025년 06월 11일)
+- 기획: 3일 (2025년 05월 14일 ~ 2025년 05월 16일)[15hours]
+- 디자인: 5일 (2025년 05월 19일 ~ 2025년 05월 23일)[25hours]
+- 개발: 10일 (2025년 05월 26일 ~ 2025년 06월 11일)[50hours]
+  
+  
+## 🧩 사용 기술
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![AOS](https://img.shields.io/badge/AOS-3ED0F7?style=for-the-badge&logo=&logoColor=white)
+![GSAP ScrollTrigger](https://img.shields.io/badge/GSAP_ScrollTrigger-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
 
+## 🤸‍♂️ 사용 api
+![OpenWeather](https://img.shields.io/badge/OpenWeather-1E90FF?style=for-the-badge&logo=weather&logoColor=white)
+![Naver Map](https://img.shields.io/badge/Naver_Map-03C75A?style=for-the-badge&logo=&logoColor=white)
+
+## 📁 폴더 구조
+```
+📦aomg-renewal
+├── 📁 css
+├── 📁 images
+├── 📁 js
+│   ├── mainArtist.js
+│   ├── mainHeader.js
+│   ├── mainNews.js
+│   ├── mainSection01.js
+│   ├── subAbout.js
+│   ├── subArtist.js
+│   ├── subArtistSwiper.js
+│   ├── subNews.js
+│   ├── subSchedule.js
+│   ├── subStore.js
+│   └── swiper.js
+├── 📁 ncl_neovibes
+├── 📁 weatherIcon
+├── AOMG.html
+├── artist-info-sub.html
+├── artist-info-sub.scss
+├── artist-swiper.scss
+├── fonts.scss
+├── footer.scss
+├── index.html
+├── mainAbout.scss
+├── mainArtist.scss
+├── mainHeader.scss
+├── mainMain.scss
+├── mainNews.scss
+├── mainSection01.scss
+├── reset.scss
+├── subAbout.scss
+├── subArtist.html
+├── subArtist.scss
+├── subNews.html
+├── subNews.scss
+├── subSchedule.html
+├── subSchedule.scss
+├── subStore.html
+├── subStore.scss
+└── variables.scss
+
+```
 
 ## 🎯 리뉴얼 목적
 - AOMG만의 톤앤매너 강화: 브랜드 감성과 어울리는 컬러 팔레트, 강렬한 타이포그래피, 비디오 기반 시각 요소로 몰입감 있는 UI 구성
-
 - 직관적인 사용자 경험(UX): 누구나 쉽게 콘텐츠에 접근하고, 아티스트 정보를 탐색할 수 있도록 UI 구조 개선
 - 비주얼 중심 레이아웃: 이미지, 영상, 모션을 적극 활용해 브랜드 아이덴티티를 시각적으로 표현
 - 스케줄 기능 추가: 아티스트 활동 일정을 확인할 수 있는 서브페이지 구성
@@ -125,68 +181,6 @@ aomg소속 아티스트들의 굿즈를 소개하는 스토어 페이지
 스와이퍼 슬라이드를 활용해 베스트 아이템과 신규 앨범을 확인 가능
 전체적인 제품을 소개하는 페이지는 간격을 조절한 후 페이지네이션 기능 활용
 
-## 🧩 사용 기술
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![AOS](https://img.shields.io/badge/AOS-3ED0F7?style=for-the-badge&logo=&logoColor=white)
-![GSAP ScrollTrigger](https://img.shields.io/badge/GSAP_ScrollTrigger-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
-
-## 🤸‍♂️ 사용 api
-![OpenWeather](https://img.shields.io/badge/OpenWeather-1E90FF?style=for-the-badge&logo=weather&logoColor=white)
-![Naver Map](https://img.shields.io/badge/Naver_Map-03C75A?style=for-the-badge&logo=&logoColor=white)
-
-## 📁 폴더 구조
-```
-📦aomg-renewal
-├── 📁 css
-├── 📁 images
-├── 📁 js
-│   ├── mainArtist.js
-│   ├── mainHeader.js
-│   ├── mainNews.js
-│   ├── mainSection01.js
-│   ├── subAbout.js
-│   ├── subArtist.js
-│   ├── subArtistSwiper.js
-│   ├── subNews.js
-│   ├── subSchedule.js
-│   ├── subStore.js
-│   └── swiper.js
-├── 📁 ncl_neovibes
-├── 📁 weatherIcon
-├── AOMG.html
-├── artist-info-sub.html
-├── artist-info-sub.scss
-├── artist-swiper.scss
-├── fonts.scss
-├── footer.scss
-├── index.html
-├── mainAbout.scss
-├── mainArtist.scss
-├── mainHeader.scss
-├── mainMain.scss
-├── mainNews.scss
-├── mainSection01.scss
-├── reset.scss
-├── subAbout.scss
-├── subArtist.html
-├── subArtist.scss
-├── subNews.html
-├── subNews.scss
-├── subSchedule.html
-├── subSchedule.scss
-├── subStore.html
-├── subStore.scss
-└── variables.scss
-
-```
-
-## 📝 설치 및 실행 방법
-별도의 빌드 환경 없이 정적 페이지 형태로 동작합니다.
-웹 서버 또는 로컬에서 다음과 같이 실행할 수 있습니다:
-    # VSCode Live Server 또는
-    (https://chan4871.github.io/aomg/)
 
 ## 📌 기여 및 참고
 - 본 프로젝트는 교육 및 포트폴리오 용도로 제작되었습니다.
