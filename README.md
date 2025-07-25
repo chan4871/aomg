@@ -1,4 +1,4 @@
-# 🎧 AOMG Official Website Renewal
+# AOMG Official Website Renewal
 
 
 ## 프로젝트 개요
